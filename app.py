@@ -1,6 +1,6 @@
 from mtcnn.mtcnn import MTCNN
 import cv2 
-import gradio
+import gradio as gr
 def draw_image_with_boxes(image):
     detector = MTCNN()
     faces = detector.detect_faces(image)
